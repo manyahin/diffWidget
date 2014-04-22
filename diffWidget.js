@@ -30,12 +30,8 @@
     var tpl = $('<div class="diffWidget"><div class="wrapper"><div class="first"></div><div class="second"></div></div></div>');
 
     var wrap = tpl.find('.wrapper'),
-      width = wrap.width(),
       topLayer = wrap.find('.first'),
       bottomLayer = wrap.find('.second');
-
-    tpl.css('width', options.width);
-    tpl.css('height', options.height);
 
     function selectMethod(element, option)
     {
@@ -49,6 +45,9 @@
 
     selectMethod(topLayer, options.top);
     selectMethod(bottomLayer, options.bottom);
+
+    tpl.css('width', options.width);
+    tpl.css('height', options.height);
 
     topLayer.width(options.position);
 
