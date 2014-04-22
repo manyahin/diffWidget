@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diff Widget</title>
+  <script src="jquery-2.1.0.min.js"></script>
+  <script src="diffWidget.js"></script>
+  <link rel="stylesheet" type="text/css" href="diffWidget.css">
+  <style type="text/css">
+    body {
+      margin: 50px auto;
+      width: 960px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>DiffWidget</h1>
+  <h2>Widget as at jpegmini.com/</h2>
+
+  <h3>Example 1</h3>
+  <p>Standart options</p>
+  <div id="ex1"></div>
+
+  <h3>Example 2</h3>
+  <p>Custom images</p>
+  <div id="ex2"></div>
+
+  <h3>Example 3</h3>
+  <p>Custom images, size and start position</p>
+  <div id="ex3"></div>
+
+  <script>
+    $(document).ready(function(){
+
+      $('#ex1').diffWidget();
+
+      $('#ex2').diffWidget({
+        'top': 'images/mountains.jpg',
+        'bottom': 'images/mountains_wb.jpg'
+      });
+
+      $('#ex3').diffWidget(
+      {
+        'width': '500px',
+        'height': '200px',
+        'top': 'images/forest.jpg',
+        'bottom': 'images/forest_invert.jpg',
+        'position': '75%'
+      })
+
+    })    
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+.diffWidget {
+  border: 1px solid rgba(0,0,0, 0.3);
+  padding: 10px;
+}
+
+.diffWidget .wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.diffWidget .first {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  top: 0;
+  left: 0;
+
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.diffWidget .second {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
