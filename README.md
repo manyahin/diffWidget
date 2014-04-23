@@ -3,7 +3,7 @@ DiffWidget.js
 
 DiffWidget is a jQuery plugin for create slider/diff viewer as at [jpegmini.com][1]. Clone it and run index.html for try.
 
-![screenshot](https://raw.github.com/username/projectname/branch/path/to/img.png)
+![screenshot](https://github.com/manyahin/diffWidget/blob/master/images/screen.jpg)
 
 Usage
 --------------
